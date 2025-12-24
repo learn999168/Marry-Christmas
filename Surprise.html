@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+    <link rel="icon" href="1729328192058.jpg">
+    <link rel="stylesheet" href="Surprise.css">
+    <style>
+        :root {
+            --font-FrakturBT: "UnifrakturCook", cursive;
+        }
+        h1 {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+            font-weight: bold;
+            font-family: "BBH Hegarty", sans-serif;
+            color: #ff0000;
+            text-shadow: 0 0 10px #ffffff, 0 0 20px #ff4444, 0 0 40px #ff0000;
+            white-space: nowrap;
+            animation: glowing 2s ease-in-out infinite, bounce 2s ease-in-out infinite;
+
+        }
+
+        .great-vibes-regular {
+            font-family: "Great Vibes", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        @keyframes glowing {
+            0% {text-shadow: 0 0 10px #ffffff, 0 0 20px #ff4444, 0 0 40px #ff0000;}
+            50% {text-shadow: 0 0 20px #fff, 0 0 40px #00ff37, 0 0 40px #ff2222;}
+            100% {text-shadow: 0 0 10px #fff, 0 0 20px #ff4444, 0 0 40px #ff0000;}
+        }
+
+        @keyframes bounce {
+            0% { transform: translate(-50%, 0);}
+            100% { transform: translate(-50%, -15px);}
+        }
+
+        .open {
+            height: 30px;
+            width: 40px;
+            border-radius: 10px;
+            background-color: palevioletred;
+            margin: 10px 43%;
+            padding: 30px 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 2s;
+
+        }
+        ul.no-bullet {
+            list-style: none;
+        
+        }
+
+        a {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: var(--font-FrakturBT);
+        }
+        .open:hover {
+            transform: rotate(360deg);
+            transition: 2s;
+            background-color: red;
+        }
+        #backBtn {
+            height: 30px;
+            width: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header><h1 class="Chrisrmas-text"> Happy Merry Christmas</h1></header>
+    <main>
+        <div class="santa-border">
+            <div class="static-content">
+                <div class="container">
+                    <div class="santa">
+                        <div class="hand-l"></div>
+                        <div class="hand-r"></div>
+                        <div class="hat"></div>
+                        <div class="face">
+                            <div class="beard"></div>
+                            <div class="eyes"></div>
+                        </div>
+                        <div class="belt"></div>
+                        <div class="shoes"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <nav class="open">
+            <ul class="no-bullet">
+                <li style="
+                    display: flex;">
+                    <p id="backBtn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg></p>
+                    <a href="index.html" target="_self" style=" text-decoration: none;"> Back</a>
+                    
+                    
+                </li>
+            </ul>
+        </nav>
+        <!-- <audio src="your-audio-file.mp3" autoplay loop></audio>
+        <audio src="Disneysong1.MP3" autoplay loop muted></audio> -->
+         <!-- <audio id="myAudio" src="arctic_monkeys_i_wanna_be_yours_lyrics_sezfntfceqy_6440fb6c.mp3" loop></audio>
+    </footer>
+   
+
+    <script>
+        window.addEventListener('click', () => {
+            const audio = document.getElementById('myAudio');
+            audio.play();
+        }, { once: true }); // This makes sure it only triggers on the first click
+    </script> -->
+    <iframe src="jingle_bells.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe>
+
+    <audio autoplay loop>
+        <source src="jingle_bells.mp3">
+    </audio>
+    
+</body>
+</html>

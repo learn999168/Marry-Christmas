@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why you click No!</title>
+    <link rel="icon" href="1732102974926.jpg">
+    <style>
+        body {
+            background-color: rgb(8, 8, 32);
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-top: 50px;
+        }
+        .container {
+            margin-top: 60px;
+            height: 300px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            padding: auto;
+            place-items: center;
+        }
+
+        #panda {
+            width: 290px;
+            height: 290px;
+            /* justify-content: center;
+            align-items: center; */
+            display: flex;
+            box-shadow: 0 0 20px 0 white;
+            border-radius: 10px;
+            background-color: aqua;
+        }
+        .content {
+            align-items: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        #text {
+            color: aliceblue;
+            font-family: "UnifrakturCook", cursive;
+            font-size: 30px;
+            margin-top: 10px;
+            padding: 10px;
+            text-shadow: 0px 0 10px rgb(255, 147, 165);
+            animation: textround 5s linear infinite;
+            /* animation: runaround 5s infinite; */
+        }
+        /* #text::after {
+            color: blue;
+            
+        } */
+        @keyframes textround {
+            0% {color: rgb(255, 216, 40);}
+            10% {color: aqua;}
+            20% {color: rgb(153, 43, 255);}
+            30% {color: rgb(55, 0, 255);}
+            50% {color: rgb(255, 0, 128);}
+            60% {color: rgb(255, 0, 0);}
+            70% {color: rgb(173, 255, 65);}
+            80% {color: rgb(255, 156, 26);}
+            90% {color: aqua;}
+            100% {color: rgb(95, 155, 155);}
+        }
+        /* @keyframes runaround {
+            0% {margin-left: 0;}
+            100% {margin-left: 90%;}
+        } */
+        .content:hover {
+            cursor: pointer;
+            transform: transform(1.05);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img id="panda" src="love.gif" alt="why no">
+            <strong id="text">Why you click No!</strong>
+        </div>
+        
+    </div>
+</body>
+</html>
